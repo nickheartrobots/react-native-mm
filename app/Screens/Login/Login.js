@@ -7,7 +7,9 @@
 import React, { Component } from 'react';
 import {
 	Text,
-	View
+	View,
+	Button,
+	TextInput
 } from 'react-native';
 import styles from './styles'
 
@@ -17,7 +19,11 @@ export default class Login extends Component {
 			<View style={styles.container}>
 				<Text style={styles.welcome}>
 					Login Screen
-        		</Text>
+				</Text>
+				<Button 
+					title="Login"
+					onPress={() => this.props.navigation.navigate('Home')}
+				/>
 			</View>
 		);
 	}

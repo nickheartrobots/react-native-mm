@@ -5,13 +5,10 @@
  */
 
 import React, { Component } from 'react';
-import Login from './app/Screens/Login/Login'
+import RootStack from './app/Routes'
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <Login />
-    );
-  }
+export default class App extends Component {
+	render() {
+		return <RootStack />
+	}
 }
