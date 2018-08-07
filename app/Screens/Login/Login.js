@@ -18,10 +18,19 @@ export default class Login extends Component {
 		return (
 			<View style={styles.container}>
 				<Text style={styles.welcome}>
-					Login Screen
+					Login
 				</Text>
+				<Text style={styles.label}>
+					Username:
+				</Text>
+				<TextInput style={styles.input}/>
+				<Text style={styles.label}>
+					Password:
+				</Text>
+				<TextInput style={styles.input} />
 				<Button 
 					title="Login"
+					style={styles.button}
 					onPress={() => this.props.navigation.navigate('Home')}
 				/>
 			</View>
